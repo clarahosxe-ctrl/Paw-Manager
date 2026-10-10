@@ -11,7 +11,7 @@ export default {
       },
       borderRadius: { card: '22px', btn: '18px' },
       boxShadow: { soft: '0 1px 2px rgb(0 0 0 / 0.04), 0 4px 14px rgb(0 0 0 / 0.04)' },
-      fontFamily: { sans: ['"DM Sans"', 'system-ui', 'sans-serif'], serif: ['"Fraunces"', 'Georgia', 'serif'] },
+      fontFamily: { sans: ['"DM Sans"', 'system-ui', 'sans-serif'], serif: ['"DM Sans"', 'system-ui', 'sans-serif'] },
     },
   },
   plugins: [],
