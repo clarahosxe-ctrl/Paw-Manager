@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg:248 246 239; --card:238 235 215; --primary:62 73 48; --sage:167 174 138; --ink:41 43 36; --muted:133 132 119; --line:229 225 211; --warn:199 120 90; --ok:100 133 104; --onprimary:255 255 255; }
+html, body, #root { height: 100%; }
+body { @apply bg-bg text-ink font-sans antialiased; -webkit-tap-highlight-color: transparent; }
+h1, h2, .font-display { font-family: 'Fraunces', Georgia, serif; font-weight: 500; }
+input, select, textarea { @apply w-full rounded-btn border border-line bg-bg px-4 py-3 text-base text-ink outline-none focus:border-primary focus:ring-2 focus:ring-primary/20; }
+input[type=checkbox] { @apply h-5 w-5 w-auto accent-[rgb(var(--primary))]; }
+.pb-safe { padding-bottom: max(0.5rem, env(safe-area-inset-bottom)); }
+@keyframes rise { from { transform: translateY(24px); opacity: 0 } to { transform: none; opacity: 1 } }
+.rise { animation: rise .22s ease-out }
+:focus-visible { outline: 2px solid rgb(var(--primary)); outline-offset: 2px; }
